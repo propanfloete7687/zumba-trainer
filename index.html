@@ -5,34 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Zumba Trainer</title>
 <link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#E040FB">
-<meta name="mobile-web-app-capable" content="yes">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-:root{--zumba:#E040FB;--zumba2:#AB47BC;--latin:#FF6D00;--dance:#FFD600;--cool:#00BCD4;--alert:#FF1744;--gold:#FFD600}
-[data-theme="dark"]{--bg:#0A050F;--surface:#14091C;--card:#1C0E28;--card2:#221232;--border:#2E1640;--text:#F5E6FF;--muted:#7A5590;--shadow:rgba(0,0,0,.7);--hgrad:linear-gradient(135deg,#0A050F 0%,#1A0530 55%,#0A050F 100%);--hover:#221232;--inp:#1C0E28}
-[data-theme="light"]{--bg:#F9F0FF;--surface:#FFFFFF;--card:#F5EAFF;--card2:#EEE0FA;--border:#D9BEF0;--text:#1A0530;--muted:#9060B0;--shadow:rgba(0,0,0,.1);--hgrad:linear-gradient(135deg,#fff 0%,#F5E6FF 55%,#fff 100%);--hover:#EEE0FA;--inp:#fff}
-*{box-sizing:border-box;margin:0;padding:0}
-body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;font-weight:300;min-height:100vh;transition:background .3s,color .3s}
-
-.nav{background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 8px 0 14px;position:sticky;top:0;z-index:50;min-height:50px}
-.nav-brand{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.1rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text);padding-right:10px;margin-right:8px;border-right:1px solid var(--border);white-space:nowrap;flex-shrink:0}
-.nav-brand span{color:var(--zumba)}
-.nav-tabs{display:flex;flex:1;overflow-x:auto;scrollbar-width:none;min-width:0}
-.nav-tabs::-webkit-scrollbar{display:none}
-.nav-tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);padding:14px 9px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;white-space:nowrap;flex-shrink:0}
-.nav-tab.active{color:var(--zumba);border-bottom-color:var(--zumba)}
-.nav-right{display:flex;align-items:center;gap:5px;flex-shrink:0;margin-left:6px}
-.btn-lang{background:var(--zumba);color:#fff;border:none;border-radius:14px;padding:4px 10px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.06em;white-space:nowrap;flex-shrink:0}
-.btn-theme{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:4px 10px;cursor:pointer;font-size:.75rem;color:var(--muted);white-space:nowrap;flex-shrink:0}
-.btn-theme:hover{border-color:var(--zumba);color:var(--zumba)}
-
-.view{display:none;max-width:960px;margin:0 auto;padding:20px 14px 80px}
-.view.active{display:block}
-#viewWorkout{display:none;flex-direction:column;min-height:100vh}
-#viewWorkout.active{display:flex;max-width:none;padding:0}
-
-.section{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px}
+<meta name="theme-color" content="#E040FB">round:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px}
 .section-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-bottom:12px}
 .banner{background:var(--hgrad);border:1px solid var(--border);border-left:3px solid var(--zumba);border-radius:12px;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:12px;flex-wrap:wrap}
 .banner-time{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:2.2rem;color:var(--zumba);line-height:1}
